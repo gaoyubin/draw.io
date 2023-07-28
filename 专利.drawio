@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-07-28T12:35:26.682Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="Uib3ylisgPp6PMPWq-51" version="21.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-28T13:26:19.733Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="m7M9okeYwcbCFp-vdriR" version="21.6.5" type="github">
   <diagram name="第 1 页" id="iI3ovuWfcA6Ct2PmyeC-">
-    <mxGraphModel dx="1185" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1185" dy="642" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -82,6 +82,60 @@
         </mxCell>
         <mxCell id="QU-xv5KzZatvjX5Uf1x0-18" value="上传图片" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="705" y="348" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QU-xv5KzZatvjX5Uf1x0-20" target="QU-xv5KzZatvjX5Uf1x0-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QU-xv5KzZatvjX5Uf1x0-20" target="QU-xv5KzZatvjX5Uf1x0-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-20" value="是否是bmp" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="735" y="836.88" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-21" value="通过原图得到jpg图片，覆盖原图" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="910" y="843.76" width="120" height="56.25" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-23" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="855" y="843.76" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QU-xv5KzZatvjX5Uf1x0-27" target="QU-xv5KzZatvjX5Uf1x0-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-27" value="获取去除元信息的图片" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="725" y="960" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QU-xv5KzZatvjX5Uf1x0-29" target="QU-xv5KzZatvjX5Uf1x0-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QU-xv5KzZatvjX5Uf1x0-29" target="QU-xv5KzZatvjX5Uf1x0-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-29" value="如果去除元信息的图片大小远小于原图" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="725" y="1050" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-32" value="用去除元信息的图片覆盖原图" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-34" value="不处理" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="755" y="1170" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-36" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="780" y="918" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-37" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="780" y="1010" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-38" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="780" y="1130" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-39" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="865" y="1060" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="QU-xv5KzZatvjX5Uf1x0-40" target="QU-xv5KzZatvjX5Uf1x0-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QU-xv5KzZatvjX5Uf1x0-40" value="获取图片信息，包括图片格式" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="725" y="770" width="130" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
